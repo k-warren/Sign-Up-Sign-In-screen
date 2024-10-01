@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+  <title>Sign In and Sign Up Page</title>
+  <link rel='stylesheet' href='style.css'>
+  <script src="https://kit.fontawesome.com/445968f404.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container'>
+  <div class='form-box'>
+    <h1 id='title'>Sign Up</h1>
+    <form>
+      <div class='input-group'>
+        <div class='input-field' id='usernameField'>
+          <i class="fa-solid fa-user"></i>
+          <input type='text' placeholder='Username'> 
+        </div>
+        <div class='input-field' id='emailField'>
+          <i class="fa-solid fa-envelope"></i>
+          <input type='email' placeholder='Email'> 
+        </div>
+        <div class='input-field' id='passwordField'>
+          <i class="fa-solid fa-lock"></i>
+          <input type='password' placeholder='Password'> 
+        </div>
+        <div class='input-field' id='passwordrepeatField'>
+          <i class="fa-solid fa-lock"></i>
+          <input type='password' placeholder='Repeat Password'> 
+        </div>
+        <p id='password forget' class='hidden'>Forgot password <a href='forgot password.html'>Click here!</a></p>
+      </div>  
+      <div class='btn-field'>
+        <button type='button' id='signupBtn'>Sign Up</button>
+        <button type='button' id='signinBtn' class='disable'>Sign In</button>
+      </div>
+      <div class='submit-group'>
+        <a href = 'main menu.html'>
+          <button type='button' class='submitBtn' id='submitBtn'>Submit</button>
+        </a>
+      </div>
+    </form> 
+</div>
+
+<script>
+let signupBtn = document.getElementById('signupBtn');
+let signinBtn = document.getElementById('signinBtn');
+let usernameField = document.getElementById('usernameField');
+let title = document.getElementById('title');
+let repeat = document.getElementById('passwordrepeatField');
+let forget = document.getElementById('password forget');
+
+
+signinBtn.onclick = function(){
+  usernameField.style.maxHeight = '0';
+  repeat.style.maxHeight = '0';
+  forget.classList.remove('hidden');
+  title.innerHTML = 'Sign In';
+  signupBtn.classList.add('disable');
+  signinBtn.classList.remove('disable');
+}
+
+signupBtn.onclick = function(){
+  usernameField.style.maxHeight = '60px';
+  repeat.style.maxHeight = '60px';
+  forget.classList.add('hidden');
+  title.innerHTML = 'Sign Up';
+  signupBtn.classList.remove('disable');
+  signinBtn.classList.add('disable');
+}
+  
+</script>
+  
+  
+</body>
+</html>

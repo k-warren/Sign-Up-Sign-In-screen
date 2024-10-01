@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url(Gambling-Addiction.jpeg);
+  background-position: centre;
+  background-size: cover;
+  position: relative;
+}
+
+.form-box{
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #f00;
+  position: relative;
+}
+
+.form-box h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #f00;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field{
+  background: #eaeaea;
+  margin: 10px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.input-field i{
+  margin: 15px;
+  color: #999;
+}
+
+form p{
+  text-align: center;
+  font-size: 14px;
+}
+
+form p a{
+  text-decoration: none;
+  color: #f00;
+}
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button{
+  flex-basis: 48%;
+  background: #f00;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.input-group{
+  height: 280px;
+}
+
+.btn-field button.disable{
+  background: #eaeaea;
+  color: #555;
+}
+
+form p.hidden{
+  visibility: hidden;
+}
+
+.submit-group button{
+  margin-top: 10px;
+  flex-basis: 48%;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  position: center;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background: #555;
+  transition: background 1s;
+}
+
+.btn-list a{
+  text-decoration: none;
+}
+
+.btn-list button{
+  transform: translateX(60%);
+  margin-top: 10px;
+  flex-basis: 50%;
+  background: #f00;
+  color: white;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  }
+
+.btn-list button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-list button:hover {
+  background: #555;
+  transition: background 1s;
+}
+
+
+.form-box h3{
+  padding-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.form-box a {
+  text-decoration: none;
+  color: #f00;
+}
